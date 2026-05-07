@@ -1,0 +1,261 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "entity1",
+      "type": "rectangle",
+      "x": 300,
+      "y": 300,
+      "width": 180,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1111111111,
+      "version": 64,
+      "versionNonce": 878284299,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "entity1-text",
+          "type": "text"
+        },
+        {
+          "id": "relationship",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1778184591920,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "entity2",
+      "type": "rectangle",
+      "x": 600,
+      "y": 300,
+      "width": 180,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a1",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1111111112,
+      "version": 1,
+      "versionNonce": 2222222223,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "entity2-text",
+          "type": "text"
+        },
+        {
+          "id": "relationship",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1706659200000,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "relationship",
+      "type": "arrow",
+      "x": 484.32713142740556,
+      "y": 350,
+      "width": 111.34573714518865,
+      "height": 0,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a2",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1111111113,
+      "version": 65,
+      "versionNonce": 1615767019,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "label",
+          "type": "text"
+        }
+      ],
+      "updated": 1778184591921,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          111.34573714518865,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "entity1",
+        "focus": 0,
+        "gap": 5
+      },
+      "endBinding": {
+        "elementId": "entity2",
+        "focus": 0,
+        "gap": 5
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "label",
+      "type": "text",
+      "x": 500.6720428466797,
+      "y": 340,
+      "width": 78.65591430664062,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a3",
+      "roundness": null,
+      "seed": 1111111114,
+      "version": 4,
+      "versionNonce": 1336633061,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1778184591920,
+      "link": null,
+      "locked": false,
+      "text": "relates to",
+      "fontSize": 16,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "relationship",
+      "originalText": "relates to",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "entity1-text",
+      "type": "text",
+      "x": 348.11002349853516,
+      "y": 337.5,
+      "width": 83.77995300292969,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a4",
+      "roundness": null,
+      "seed": 1867388433,
+      "version": 68,
+      "versionNonce": 126863179,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1778184591920,
+      "link": null,
+      "locked": false,
+      "text": "Entity A",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "entity1",
+      "originalText": "Entity A",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "entity2-text",
+      "type": "text",
+      "x": 642,
+      "y": 337.5,
+      "width": 96,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a5",
+      "roundness": null,
+      "seed": 1511569978,
+      "version": 1,
+      "versionNonce": 2511569978,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1738195200000,
+      "link": null,
+      "locked": false,
+      "text": "Entity B",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "entity2",
+      "originalText": "Entity B",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
