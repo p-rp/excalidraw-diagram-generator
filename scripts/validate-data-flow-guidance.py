@@ -38,9 +38,9 @@ def main():
 
     expected_types = {
         "customer-entity": "rectangle",
-        "place-order": "ellipse",
-        "send-confirmation": "ellipse",
-        "process-payment": "ellipse",
+        "place-order": "rectangle",
+        "send-confirmation": "rectangle",
+        "process-payment": "rectangle",
         "order-database": "rectangle",
         "payment-gateway": "rectangle",
     }
@@ -104,7 +104,7 @@ def main():
             if not any(item.get("id") == arrow["id"] for item in shape.get("boundElements", [])):
                 fail(f"shape {shape_id} does not bind back to arrow {arrow['id']}")
 
-    process_ids = [element["id"] for element in elements if element["type"] == "ellipse" and not element["id"].endswith("-shadow")]
+    process_ids = [element["id"] for element in elements if element["type"] == "rectangle" and not element["id"].endswith("-shadow") and element["id"] != "dfd-frame" and not ("store" in element["id"] or "database" in element["id"] or element["id"] == "payment-gateway")]
     data_store_ids = [
         element["id"]
         for element in elements
