@@ -304,9 +304,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "a7",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000008,
       "version": 1,
       "versionNonce": 3000000008,
@@ -362,9 +360,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "a8",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000009,
       "version": 1,
       "versionNonce": 3000000009,
@@ -420,9 +416,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "a9",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000010,
       "version": 1,
       "versionNonce": 3000000010,
@@ -478,9 +472,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "aA",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000011,
       "version": 1,
       "versionNonce": 3000000011,
@@ -536,9 +528,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "aB",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000012,
       "version": 1,
       "versionNonce": 3000000012,
@@ -762,9 +752,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "aG",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000017,
       "version": 1,
       "versionNonce": 3000000017,
@@ -820,9 +808,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "aH",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000018,
       "version": 1,
       "versionNonce": 3000000018,
@@ -878,9 +864,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "aI",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000019,
       "version": 1,
       "versionNonce": 3000000019,
@@ -936,9 +920,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "aJ",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2000000020,
       "version": 144,
       "versionNonce": 1868905143,

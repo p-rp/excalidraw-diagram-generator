@@ -99,9 +99,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "a2",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 1111111113,
       "version": 65,
       "versionNonce": 1615767019,

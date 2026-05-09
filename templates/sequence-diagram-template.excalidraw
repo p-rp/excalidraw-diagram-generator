@@ -249,9 +249,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "a6",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 4001001007,
       "version": 181,
       "versionNonce": 44163138,
@@ -372,9 +370,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "a9",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 4001001010,
       "version": 1,
       "versionNonce": 5002002010,
@@ -467,9 +463,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "aB",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 4001001012,
       "version": 2,
       "versionNonce": 1538223454,
@@ -562,9 +556,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "aD",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 4001001014,
       "version": 2,
       "versionNonce": 1817579934,

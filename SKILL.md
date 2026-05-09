@@ -86,6 +86,11 @@ Analyze the user's description to determine:
 - Data stores (databases, files)
 - Data flows (arrows showing data movement from left-to-right or from top-left to bottom-right)
 - **Important**: Do not represent process order, only data flow
+- Data flow diagrams visualize data movement, storage, and transformation, not task sequence
+- Use consistent DFD symbols: rectangles for external entities, ellipses for processes, and clearly labeled rectangles for data stores
+- Every process and data store should have at least one input and one output when applicable
+- Data should move through a process before entering or leaving a data store
+- Avoid crossing data-flow arrows; use left-to-right or top-left-to-bottom-right layouts with short labels
 
 **For Business Flow (Swimlane):**
 - Actors/roles (departments, systems, people) - displayed as header columns
@@ -311,7 +316,7 @@ Structure the complete Excalidraw file:
 4. **Text sizing**: 16-24px for readability
 5. **Font**: Always use `fontFamily: 5` (Excalifont) for all text elements
 6. **Text Binding**: Bind all text labels to their containers — inline `text` property for shapes, `containerId` + `boundElements` for arrow labels
-7. **Arrow style**: Use straight arrows for simple flows, curved for complex relationships
+7. **Arrow style**: Use straight arrows for one-direction connectors. Prefer elbow arrows for multi-direction connectors or any connector that would otherwise need a curve around other elements. Use curved arrows only when an elbow or straight connector would be less readable.
 
 ### Flowchart Style Defaults
 
@@ -322,6 +327,18 @@ Use the `templates/flowchart-template.excalidraw` layout as the default visual l
 - Use vertical reading order for simple process flows and balanced branching for decisions
 - Use branch labels only when they clarify the path, and bind those labels to the arrow itself
 - Keep arrows attached edge-to-edge through `startBinding` and `endBinding`; every connected shape must also list the arrow in `boundElements`
+
+### Data Flow Diagram Style Defaults
+
+Use the `templates/data-flow-diagram-template.excalidraw` layout as the default visual language for DFDs:
+
+- Logical DFDs should focus on business data movement: external entity → process → process/data store → external destination
+- Physical DFDs should focus on implementation data movement: UI/client → service/process → database/data store → downstream system
+- Use red rounded rectangles for external entities, blue ellipses for transformation processes, green rectangles for data stores, and purple rectangles for downstream systems when useful
+- Label every data-flow arrow with the data being moved, not an action verb when a data noun is clearer
+- Bind every data-flow arrow to both the source and target node with `startBinding` and `endBinding`
+- Bind every arrow label to the arrow itself and place it on the connector path
+- Avoid unbalanced DFD nodes: processes and data stores should usually have both an input and an output
 
 ### Complexity Management
 
@@ -739,7 +756,7 @@ See bundled references for:
 
 ## Limitations
 
-- Complex curves are simplified to straight/basic curved lines
+- Curved arrows should be rare; prefer straight or elbow arrow paths for generated diagrams
 - Hand-drawn roughness is set to default (1)
 - No embedded images support in auto-generation
 - Maximum recommended elements: 20 per diagram

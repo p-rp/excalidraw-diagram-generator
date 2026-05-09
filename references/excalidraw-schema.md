@@ -169,7 +169,7 @@ interface ArrowElement extends BaseElement {
   startArrowhead: "arrow" | null;
   endArrowhead: "arrow" | null;
   lastCommittedPoint: [number, number] | null;
-  roundness: { type: 2 };      // 2 = curved arrow
+  roundness: { type: 2 } | null; // null = straight/elbow, type 2 = curved
 }
 ```
 
@@ -186,7 +186,7 @@ interface ArrowElement extends BaseElement {
     [0, 0],
     [200, 0]
   ],
-  "roundness": { "type": 2 },
+  "roundness": null,
   "startBinding": null,
   "endBinding": null,
   "boundElements": [{ "id": "arrow-label-1", "type": "text" }]
@@ -541,7 +541,7 @@ const versionNonce = Math.floor(Math.random() * 2147483647);
       "groupIds": [],
       "frameId": null,
       "index": "a2",
-      "roundness": { "type": 2 },
+      "roundness": null,
       "seed": 1234567892,
       "version": 1,
       "versionNonce": 987654323,

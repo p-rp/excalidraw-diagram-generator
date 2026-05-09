@@ -262,9 +262,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "a7",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2001001008,
       "version": 281,
       "versionNonce": 1474965871,
@@ -354,9 +352,7 @@
       "groupIds": [],
       "frameId": null,
       "index": "a9",
-      "roundness": {
-        "type": 2
-      },
+      "roundness": null,
       "seed": 2001001010,
       "version": 1,
       "versionNonce": 3002002010,

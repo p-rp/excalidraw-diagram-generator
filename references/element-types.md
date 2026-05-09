@@ -256,7 +256,7 @@ Diamonds need more space than rectangles for the same text:
 {
   type: "arrow",
   points: [[0, 0], [endX, endY]],  // Relative coordinates
-  roundness: { type: 2 },          // Curved
+  roundness: null,                 // Prefer straight/elbow arrow paths
   startBinding: null,              // Or { elementId, focus, gap } — must sync with shape
   endBinding: null,                // Or { elementId, focus, gap } — must sync with shape
   startArrowhead: null,            // Optional arrowhead at start
@@ -445,7 +445,7 @@ Arrow labels must use **bound text** — a separate text element linked to the a
 {
   type: "line",
   points: [[0, 0], [x2, y2], [x3, y3], ...],
-  roundness: null  // Or { type: 2 } for curved
+  roundness: null  // Prefer elbow points over curved arrows where practical
 }
 ```
 
