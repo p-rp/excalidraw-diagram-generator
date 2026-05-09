@@ -1,15 +1,15 @@
 {
   "type": "excalidraw",
   "version": 2,
-  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "source": "https://excalidraw.com",
   "elements": [
     {
-      "id": "logical-title",
+      "id": "dfd-title",
       "type": "text",
-      "x": 100,
-      "y": 60,
-      "width": 248,
-      "height": 30,
+      "x": 390,
+      "y": 45,
+      "width": 360,
+      "height": 55,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -22,31 +22,31 @@
       "frameId": null,
       "index": "a0",
       "roundness": null,
-      "seed": 2000000001,
+      "seed": 3000000001,
       "version": 1,
-      "versionNonce": 3000000001,
+      "versionNonce": 4000000001,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "Logical DFD: Online Order",
-      "fontSize": 24,
+      "text": "Data flow diagram",
+      "fontSize": 42,
       "fontFamily": 5,
-      "textAlign": "left",
-      "verticalAlign": "top",
+      "textAlign": "center",
+      "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Logical DFD: Online Order",
+      "originalText": "Data flow diagram",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "physical-title",
+      "id": "dfd-question",
       "type": "text",
-      "x": 100,
-      "y": 500,
-      "width": 262,
-      "height": 30,
+      "x": 190,
+      "y": 125,
+      "width": 780,
+      "height": 35,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -59,355 +59,230 @@
       "frameId": null,
       "index": "a1",
       "roundness": null,
-      "seed": 2000000002,
+      "seed": 3000000002,
       "version": 1,
-      "versionNonce": 3000000002,
+      "versionNonce": 4000000002,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "Physical DFD: Implementation",
+      "text": "How does data need to move so an order can be completed?",
       "fontSize": 24,
       "fontFamily": 5,
-      "textAlign": "left",
-      "verticalAlign": "top",
+      "textAlign": "center",
+      "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Physical DFD: Implementation",
+      "originalText": "How does data need to move so an order can be completed?",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "logical-customer",
+      "id": "dfd-frame",
       "type": "rectangle",
-      "x": 100,
-      "y": 180,
-      "width": 160,
-      "height": 80,
+      "x": 60,
+      "y": 170,
+      "width": 1080,
+      "height": 900,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "#ffc9c9",
+      "strokeColor": "#ced4da",
+      "backgroundColor": "transparent",
       "fillStyle": "solid",
       "strokeWidth": 2,
-      "strokeStyle": "solid",
+      "strokeStyle": "dashed",
       "roughness": 1,
-      "opacity": 100,
+      "opacity": 65,
       "groupIds": [],
       "frameId": null,
       "index": "a2",
-      "roundness": {
-        "type": 3
-      },
-      "seed": 2000000003,
+      "roundness": null,
+      "seed": 3000000003,
       "version": 1,
-      "versionNonce": 3000000003,
+      "versionNonce": 4000000003,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-customer-text",
-          "type": "text"
-        },
-        {
-          "id": "logical-flow-order",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
       "locked": false
     },
     {
-      "id": "logical-collect-order",
-      "type": "ellipse",
-      "x": 340,
-      "y": 170,
-      "width": 180,
-      "height": 100,
+      "id": "customer-entity-shadow",
+      "type": "rectangle",
+      "x": 122,
+      "y": 282,
+      "width": 265,
+      "height": 165,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "#d0ebff",
+      "strokeColor": "#f06595",
+      "backgroundColor": "#f06595",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 1,
-      "opacity": 100,
+      "opacity": 80,
       "groupIds": [],
       "frameId": null,
       "index": "a3",
       "roundness": null,
-      "seed": 2000000004,
+      "seed": 3000000004,
       "version": 1,
-      "versionNonce": 3000000004,
+      "versionNonce": 4000000004,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-collect-order-text",
-          "type": "text"
-        },
-        {
-          "id": "logical-flow-order",
-          "type": "arrow"
-        },
-        {
-          "id": "logical-flow-order-data",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false
+      "locked": true
     },
     {
-      "id": "logical-validate-order",
+      "id": "place-order-shadow",
       "type": "ellipse",
       "x": 620,
-      "y": 170,
-      "width": 180,
-      "height": 100,
+      "y": 264,
+      "width": 190,
+      "height": 190,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "#d0ebff",
+      "strokeColor": "#4dabf7",
+      "backgroundColor": "#4dabf7",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 1,
-      "opacity": 100,
+      "opacity": 90,
       "groupIds": [],
       "frameId": null,
       "index": "a4",
       "roundness": null,
-      "seed": 2000000005,
+      "seed": 3000000005,
       "version": 1,
-      "versionNonce": 3000000005,
+      "versionNonce": 4000000005,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-validate-order-text",
-          "type": "text"
-        },
-        {
-          "id": "logical-flow-order-data",
-          "type": "arrow"
-        },
-        {
-          "id": "logical-flow-store",
-          "type": "arrow"
-        },
-        {
-          "id": "logical-flow-store-read",
-          "type": "arrow"
-        },
-        {
-          "id": "logical-flow-fulfillment",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false
+      "locked": true
     },
     {
-      "id": "logical-order-store",
-      "type": "rectangle",
-      "x": 620,
-      "y": 340,
-      "width": 180,
-      "height": 90,
+      "id": "send-confirmation-shadow",
+      "type": "ellipse",
+      "x": 142,
+      "y": 607,
+      "width": 190,
+      "height": 190,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "#96f2d7",
+      "strokeColor": "#4dabf7",
+      "backgroundColor": "#4dabf7",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 1,
-      "opacity": 100,
+      "opacity": 90,
       "groupIds": [],
       "frameId": null,
       "index": "a5",
       "roundness": null,
-      "seed": 2000000006,
+      "seed": 3000000006,
       "version": 1,
-      "versionNonce": 3000000006,
+      "versionNonce": 4000000006,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-order-store-text",
-          "type": "text"
-        },
-        {
-          "id": "logical-flow-store",
-          "type": "arrow"
-        },
-        {
-          "id": "logical-flow-store-read",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false
+      "locked": true
     },
     {
-      "id": "logical-fulfillment-team",
-      "type": "rectangle",
-      "x": 900,
-      "y": 180,
-      "width": 180,
-      "height": 80,
+      "id": "process-payment-shadow",
+      "type": "ellipse",
+      "x": 620,
+      "y": 657,
+      "width": 190,
+      "height": 190,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "#ffc9c9",
+      "strokeColor": "#4dabf7",
+      "backgroundColor": "#4dabf7",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 1,
-      "opacity": 100,
+      "opacity": 90,
       "groupIds": [],
       "frameId": null,
       "index": "a6",
-      "roundness": {
-        "type": 3
-      },
-      "seed": 2000000007,
+      "roundness": null,
+      "seed": 3000000007,
       "version": 1,
-      "versionNonce": 3000000007,
+      "versionNonce": 4000000007,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-fulfillment-team-text",
-          "type": "text"
-        },
-        {
-          "id": "logical-flow-fulfillment",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false
+      "locked": true
     },
     {
-      "id": "logical-flow-order",
-      "type": "arrow",
-      "x": 265,
-      "y": 220,
-      "width": 70,
-      "height": 0,
+      "id": "order-database-shadow",
+      "type": "rectangle",
+      "x": 118,
+      "y": 932,
+      "width": 300,
+      "height": 110,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
+      "strokeColor": "#ffd43b",
+      "backgroundColor": "#ffd43b",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 1,
-      "opacity": 100,
+      "opacity": 90,
       "groupIds": [],
       "frameId": null,
       "index": "a7",
       "roundness": null,
-      "seed": 2000000008,
+      "seed": 3000000008,
       "version": 1,
-      "versionNonce": 3000000008,
+      "versionNonce": 4000000008,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-flow-order-text",
-          "type": "text"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          70,
-          0
-        ]
-      ],
-      "startBinding": {
-        "elementId": "logical-customer",
-        "focus": 0,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "logical-collect-order",
-        "focus": 0,
-        "gap": 5
-      },
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "locked": true
     },
     {
-      "id": "logical-flow-order-data",
-      "type": "arrow",
-      "x": 525,
-      "y": 220,
-      "width": 90,
-      "height": 0,
+      "id": "payment-gateway-shadow",
+      "type": "rectangle",
+      "x": 535,
+      "y": 932,
+      "width": 320,
+      "height": 110,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
+      "strokeColor": "#69db7c",
+      "backgroundColor": "#69db7c",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 1,
-      "opacity": 100,
+      "opacity": 90,
       "groupIds": [],
       "frameId": null,
       "index": "a8",
       "roundness": null,
-      "seed": 2000000009,
+      "seed": 3000000009,
       "version": 1,
-      "versionNonce": 3000000009,
+      "versionNonce": 4000000009,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-flow-order-data-text",
-          "type": "text"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          90,
-          0
-        ]
-      ],
-      "startBinding": {
-        "elementId": "logical-collect-order",
-        "focus": 0,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "logical-validate-order",
-        "focus": 0,
-        "gap": 5
-      },
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "locked": true
     },
     {
-      "id": "logical-flow-store",
-      "type": "arrow",
-      "x": 710,
-      "y": 275,
-      "width": 0,
-      "height": 60,
+      "id": "customer-entity",
+      "type": "rectangle",
+      "x": 110,
+      "y": 270,
+      "width": 265,
+      "height": 165,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
+      "backgroundColor": "#ffd8e8",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -417,50 +292,43 @@
       "frameId": null,
       "index": "a9",
       "roundness": null,
-      "seed": 2000000010,
+      "seed": 3000000010,
       "version": 1,
-      "versionNonce": 3000000010,
+      "versionNonce": 4000000010,
       "isDeleted": false,
       "boundElements": [
         {
-          "id": "logical-flow-store-text",
+          "id": "customer-start-text",
           "type": "text"
+        },
+        {
+          "id": "customer-name-text",
+          "type": "text"
+        },
+        {
+          "id": "customer-end-text",
+          "type": "text"
+        },
+        {
+          "id": "flow-order-information",
+          "type": "arrow"
+        },
+        {
+          "id": "flow-order-confirmation",
+          "type": "arrow"
         }
       ],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
-      "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          60
-        ]
-      ],
-      "startBinding": {
-        "elementId": "logical-validate-order",
-        "focus": 0.25,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "logical-order-store",
-        "focus": 0.25,
-        "gap": 5
-      },
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "locked": false
     },
     {
-      "id": "logical-flow-store-read",
-      "type": "arrow",
-      "x": 665,
-      "y": 335,
-      "width": 0,
-      "height": 60,
+      "id": "customer-divider-start",
+      "type": "line",
+      "x": 110,
+      "y": 315,
+      "width": 265,
+      "height": 0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -473,17 +341,12 @@
       "frameId": null,
       "index": "aA",
       "roundness": null,
-      "seed": 2000000011,
+      "seed": 3000000011,
       "version": 1,
-      "versionNonce": 3000000011,
+      "versionNonce": 4000000011,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-flow-store-read-text",
-          "type": "text"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
       "points": [
@@ -492,30 +355,22 @@
           0
         ],
         [
-          0,
-          -60
+          265,
+          0
         ]
       ],
-      "startBinding": {
-        "elementId": "logical-order-store",
-        "focus": -0.25,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "logical-validate-order",
-        "focus": -0.25,
-        "gap": 5
-      },
+      "startBinding": null,
+      "endBinding": null,
       "lastCommittedPoint": null,
       "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "endArrowhead": null
     },
     {
-      "id": "logical-flow-fulfillment",
-      "type": "arrow",
-      "x": 805,
-      "y": 220,
-      "width": 90,
+      "id": "customer-divider-end",
+      "type": "line",
+      "x": 110,
+      "y": 395,
+      "width": 265,
       "height": 0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -529,17 +384,12 @@
       "frameId": null,
       "index": "aB",
       "roundness": null,
-      "seed": 2000000012,
+      "seed": 3000000012,
       "version": 1,
-      "versionNonce": 3000000012,
+      "versionNonce": 4000000012,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "logical-flow-fulfillment-text",
-          "type": "text"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
       "points": [
@@ -548,34 +398,26 @@
           0
         ],
         [
-          90,
+          265,
           0
         ]
       ],
-      "startBinding": {
-        "elementId": "logical-validate-order",
-        "focus": 0,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "logical-fulfillment-team",
-        "focus": 0,
-        "gap": 5
-      },
+      "startBinding": null,
+      "endBinding": null,
       "lastCommittedPoint": null,
       "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "endArrowhead": null
     },
     {
-      "id": "physical-web-app",
-      "type": "rectangle",
-      "x": 100,
-      "y": 610,
-      "width": 170,
-      "height": 80,
+      "id": "customer-start-text",
+      "type": "text",
+      "x": 202,
+      "y": 285,
+      "width": 80,
+      "height": 25,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "#ffc9c9",
+      "backgroundColor": "transparent",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -584,34 +426,106 @@
       "groupIds": [],
       "frameId": null,
       "index": "aC",
-      "roundness": {
-        "type": 3
-      },
-      "seed": 2000000013,
+      "roundness": null,
+      "seed": 3000000013,
       "version": 1,
-      "versionNonce": 3000000013,
+      "versionNonce": 4000000013,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "physical-web-app-text",
-          "type": "text"
-        },
-        {
-          "id": "physical-flow-request",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false
+      "locked": false,
+      "text": "Start",
+      "fontSize": 22,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "customer-entity",
+      "originalText": "Start",
+      "autoResize": true,
+      "lineHeight": 1.25
     },
     {
-      "id": "physical-api-service",
+      "id": "customer-name-text",
+      "type": "text",
+      "x": 178,
+      "y": 348,
+      "width": 128,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aD",
+      "roundness": null,
+      "seed": 3000000014,
+      "version": 1,
+      "versionNonce": 4000000014,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1778315000000,
+      "link": null,
+      "locked": false,
+      "text": "Customer",
+      "fontSize": 24,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "customer-entity",
+      "originalText": "Customer",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "customer-end-text",
+      "type": "text",
+      "x": 208,
+      "y": 410,
+      "width": 80,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aE",
+      "roundness": null,
+      "seed": 3000000015,
+      "version": 1,
+      "versionNonce": 4000000015,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1778315000000,
+      "link": null,
+      "locked": false,
+      "text": "End",
+      "fontSize": 22,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "customer-entity",
+      "originalText": "End",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "place-order",
       "type": "ellipse",
-      "x": 360,
-      "y": 600,
+      "x": 610,
+      "y": 255,
       "width": 190,
-      "height": 100,
+      "height": 190,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "#d0ebff",
@@ -622,125 +536,37 @@
       "opacity": 100,
       "groupIds": [],
       "frameId": null,
-      "index": "aD",
-      "roundness": null,
-      "seed": 2000000014,
-      "version": 1,
-      "versionNonce": 3000000014,
-      "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "physical-api-service-text",
-          "type": "text"
-        },
-        {
-          "id": "physical-flow-request",
-          "type": "arrow"
-        },
-        {
-          "id": "physical-flow-write",
-          "type": "arrow"
-        },
-        {
-          "id": "physical-flow-read",
-          "type": "arrow"
-        },
-        {
-          "id": "physical-flow-event",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1778309100000,
-      "link": null,
-      "locked": false
-    },
-    {
-      "id": "physical-database",
-      "type": "rectangle",
-      "x": 660,
-      "y": 600,
-      "width": 190,
-      "height": 100,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "#96f2d7",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "index": "aE",
-      "roundness": null,
-      "seed": 2000000015,
-      "version": 1,
-      "versionNonce": 3000000015,
-      "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "physical-database-text",
-          "type": "text"
-        },
-        {
-          "id": "physical-flow-write",
-          "type": "arrow"
-        },
-        {
-          "id": "physical-flow-read",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1778309100000,
-      "link": null,
-      "locked": false
-    },
-    {
-      "id": "physical-analytics",
-      "type": "rectangle",
-      "x": 650,
-      "y": 780,
-      "width": 210,
-      "height": 80,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "#e5dbff",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
       "index": "aF",
-      "roundness": {
-        "type": 3
-      },
-      "seed": 2000000016,
-      "version": 143,
-      "versionNonce": 1227665239,
+      "roundness": null,
+      "seed": 3000000016,
+      "version": 1,
+      "versionNonce": 4000000016,
       "isDeleted": false,
       "boundElements": [
         {
-          "id": "physical-analytics-text",
+          "id": "place-order-text",
           "type": "text"
         },
         {
-          "id": "physical-flow-event",
+          "id": "flow-order-information",
+          "type": "arrow"
+        },
+        {
+          "id": "flow-payment-details",
           "type": "arrow"
         }
       ],
-      "updated": 1778311395984,
+      "updated": 1778315000000,
       "link": null,
       "locked": false
     },
     {
-      "id": "physical-flow-request",
-      "type": "arrow",
-      "x": 275,
-      "y": 650,
-      "width": 80,
-      "height": 0,
+      "id": "place-order-text",
+      "type": "text",
+      "x": 644.2,
+      "y": 337.5,
+      "width": 121.60000000000001,
+      "height": 25,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -753,53 +579,34 @@
       "frameId": null,
       "index": "aG",
       "roundness": null,
-      "seed": 2000000017,
+      "seed": 3000000017,
       "version": 1,
-      "versionNonce": 3000000017,
+      "versionNonce": 4000000017,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "physical-flow-request-text",
-          "type": "text"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          80,
-          0
-        ]
-      ],
-      "startBinding": {
-        "elementId": "physical-web-app",
-        "focus": 0,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "physical-api-service",
-        "focus": 0,
-        "gap": 5
-      },
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "text": "Place order",
+      "fontSize": 24,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "place-order",
+      "originalText": "Place order",
+      "autoResize": true,
+      "lineHeight": 1.25
     },
     {
-      "id": "physical-flow-write",
-      "type": "arrow",
-      "x": 555,
-      "y": 625,
-      "width": 100,
-      "height": 0,
+      "id": "send-confirmation",
+      "type": "ellipse",
+      "x": 130,
+      "y": 595,
+      "width": 190,
+      "height": 190,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
+      "backgroundColor": "#d0ebff",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -809,50 +616,35 @@
       "frameId": null,
       "index": "aH",
       "roundness": null,
-      "seed": 2000000018,
+      "seed": 3000000018,
       "version": 1,
-      "versionNonce": 3000000018,
+      "versionNonce": 4000000018,
       "isDeleted": false,
       "boundElements": [
         {
-          "id": "physical-flow-write-text",
+          "id": "send-confirmation-text",
           "type": "text"
+        },
+        {
+          "id": "flow-confirmation-data",
+          "type": "arrow"
+        },
+        {
+          "id": "flow-order-confirmation",
+          "type": "arrow"
         }
       ],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
-      "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          100,
-          0
-        ]
-      ],
-      "startBinding": {
-        "elementId": "physical-api-service",
-        "focus": -0.25,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "physical-database",
-        "focus": -0.25,
-        "gap": 5
-      },
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "locked": false
     },
     {
-      "id": "physical-flow-read",
-      "type": "arrow",
-      "x": 655,
-      "y": 675,
-      "width": 100,
-      "height": 0,
+      "id": "send-confirmation-text",
+      "type": "text",
+      "x": 164.2,
+      "y": 665.0,
+      "width": 121.60000000000001,
+      "height": 50,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -865,53 +657,34 @@
       "frameId": null,
       "index": "aI",
       "roundness": null,
-      "seed": 2000000019,
+      "seed": 3000000019,
       "version": 1,
-      "versionNonce": 3000000019,
+      "versionNonce": 4000000019,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "physical-flow-read-text",
-          "type": "text"
-        }
-      ],
-      "updated": 1778309100000,
+      "boundElements": [],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          -100,
-          0
-        ]
-      ],
-      "startBinding": {
-        "elementId": "physical-database",
-        "focus": 0.25,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "physical-api-service",
-        "focus": 0.25,
-        "gap": 5
-      },
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "text": "Send\nconfirmation",
+      "fontSize": 23,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "send-confirmation",
+      "originalText": "Send\nconfirmation",
+      "autoResize": true,
+      "lineHeight": 1.25
     },
     {
-      "id": "physical-flow-event",
-      "type": "arrow",
-      "x": 385.4412175904518,
-      "y": 689.5142591526729,
-      "width": 259.9310476285198,
-      "height": 144.97945315758932,
+      "id": "process-payment",
+      "type": "ellipse",
+      "x": 610,
+      "y": 645,
+      "width": 190,
+      "height": 190,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
+      "backgroundColor": "#d0ebff",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -921,54 +694,39 @@
       "frameId": null,
       "index": "aJ",
       "roundness": null,
-      "seed": 2000000020,
-      "version": 144,
-      "versionNonce": 1868905143,
+      "seed": 3000000020,
+      "version": 1,
+      "versionNonce": 4000000020,
       "isDeleted": false,
       "boundElements": [
         {
-          "id": "physical-flow-event-text",
+          "id": "process-payment-text",
           "type": "text"
+        },
+        {
+          "id": "flow-payment-details",
+          "type": "arrow"
+        },
+        {
+          "id": "flow-payment-request",
+          "type": "arrow"
+        },
+        {
+          "id": "flow-payment-response",
+          "type": "arrow"
         }
       ],
-      "updated": 1778311395985,
+      "updated": 1778315000000,
       "link": null,
-      "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          109.5587824095482,
-          130.48574084732707
-        ],
-        [
-          259.9310476285198,
-          144.97945315758932
-        ]
-      ],
-      "startBinding": {
-        "elementId": "physical-api-service",
-        "focus": 0.75,
-        "gap": 5
-      },
-      "endBinding": {
-        "elementId": "physical-analytics",
-        "focus": -0.5,
-        "gap": 5
-      },
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "locked": false
     },
     {
-      "id": "logical-customer-text",
+      "id": "process-payment-text",
       "type": "text",
-      "x": 143,
-      "y": 207.5,
-      "width": 74,
-      "height": 25,
+      "x": 644.2,
+      "y": 715.0,
+      "width": 121.60000000000001,
+      "height": 50,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -981,34 +739,34 @@
       "frameId": null,
       "index": "aK",
       "roundness": null,
-      "seed": 2100000001,
+      "seed": 3000000021,
       "version": 1,
-      "versionNonce": 3100000001,
+      "versionNonce": 4000000021,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "Customer",
-      "fontSize": 20,
+      "text": "Process\npayment",
+      "fontSize": 23,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "logical-customer",
-      "originalText": "Customer",
+      "containerId": "process-payment",
+      "originalText": "Process\npayment",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "logical-collect-order-text",
-      "type": "text",
-      "x": 375,
-      "y": 197.5,
-      "width": 110,
-      "height": 45,
+      "id": "order-database",
+      "type": "rectangle",
+      "x": 105,
+      "y": 920,
+      "width": 300,
+      "height": 110,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
+      "backgroundColor": "#fff3bf",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -1018,31 +776,35 @@
       "frameId": null,
       "index": "aL",
       "roundness": null,
-      "seed": 2100000002,
+      "seed": 3000000022,
       "version": 1,
-      "versionNonce": 3100000002,
+      "versionNonce": 4000000022,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778309100000,
+      "boundElements": [
+        {
+          "id": "order-database-text",
+          "type": "text"
+        },
+        {
+          "id": "flow-order-record",
+          "type": "arrow"
+        },
+        {
+          "id": "flow-confirmation-data",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false,
-      "text": "Collect\nOrder",
-      "fontSize": 18,
-      "fontFamily": 5,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "logical-collect-order",
-      "originalText": "Collect\nOrder",
-      "autoResize": true,
-      "lineHeight": 1.25
+      "locked": false
     },
     {
-      "id": "logical-validate-order-text",
+      "id": "order-database-text",
       "type": "text",
-      "x": 657,
-      "y": 197.5,
-      "width": 106,
-      "height": 45,
+      "x": 141.0,
+      "y": 962.5,
+      "width": 228.0,
+      "height": 25,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1055,34 +817,34 @@
       "frameId": null,
       "index": "aM",
       "roundness": null,
-      "seed": 2100000003,
+      "seed": 3000000023,
       "version": 1,
-      "versionNonce": 3100000003,
+      "versionNonce": 4000000023,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "Validate\nOrder",
-      "fontSize": 18,
+      "text": "Order database",
+      "fontSize": 25,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "logical-validate-order",
-      "originalText": "Validate\nOrder",
+      "containerId": "order-database",
+      "originalText": "Order database",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "logical-order-store-text",
-      "type": "text",
-      "x": 656,
-      "y": 362.5,
-      "width": 108,
-      "height": 45,
+      "id": "payment-gateway",
+      "type": "rectangle",
+      "x": 520,
+      "y": 920,
+      "width": 320,
+      "height": 110,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
+      "backgroundColor": "#d3f9d8",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -1092,30 +854,38 @@
       "frameId": null,
       "index": "aN",
       "roundness": null,
-      "seed": 2100000004,
+      "seed": 3000000024,
       "version": 1,
-      "versionNonce": 3100000004,
+      "versionNonce": 4000000024,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778309100000,
+      "boundElements": [
+        {
+          "id": "payment-gateway-text",
+          "type": "text"
+        },
+        {
+          "id": "flow-payment-request",
+          "type": "arrow"
+        },
+        {
+          "id": "flow-payment-response",
+          "type": "arrow"
+        },
+        {
+          "id": "flow-order-record",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1778315000000,
       "link": null,
-      "locked": false,
-      "text": "Order\nStore",
-      "fontSize": 18,
-      "fontFamily": 5,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "logical-order-store",
-      "originalText": "Order\nStore",
-      "autoResize": true,
-      "lineHeight": 1.25
+      "locked": false
     },
     {
-      "id": "logical-fulfillment-team-text",
+      "id": "payment-gateway-text",
       "type": "text",
-      "x": 930,
-      "y": 207.5,
-      "width": 120,
+      "x": 558.4,
+      "y": 962.5,
+      "width": 243.2,
       "height": 25,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -1129,31 +899,31 @@
       "frameId": null,
       "index": "aO",
       "roundness": null,
-      "seed": 2100000005,
+      "seed": 3000000025,
       "version": 1,
-      "versionNonce": 3100000005,
+      "versionNonce": 4000000025,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "Fulfillment",
-      "fontSize": 20,
+      "text": "Payment gateway",
+      "fontSize": 25,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "logical-fulfillment-team",
-      "originalText": "Fulfillment",
+      "containerId": "payment-gateway",
+      "originalText": "Payment gateway",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "logical-flow-order-text",
-      "type": "text",
-      "x": 265,
-      "y": 207.5,
-      "width": 70,
-      "height": 25,
+      "id": "flow-order-information",
+      "type": "arrow",
+      "x": 380,
+      "y": 352,
+      "width": 225,
+      "height": 0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1166,30 +936,49 @@
       "frameId": null,
       "index": "aP",
       "roundness": null,
-      "seed": 2100000006,
+      "seed": 3000000026,
       "version": 1,
-      "versionNonce": 3100000006,
+      "versionNonce": 4000000026,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778309100000,
+      "boundElements": [
+        {
+          "id": "flow-order-information-text",
+          "type": "text"
+        }
+      ],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "order",
-      "fontSize": 16,
-      "fontFamily": 5,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "logical-flow-order",
-      "originalText": "order",
-      "autoResize": true,
-      "lineHeight": 1.25
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          225,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "customer-entity",
+        "focus": 0,
+        "gap": 5
+      },
+      "endBinding": {
+        "elementId": "place-order",
+        "focus": 0,
+        "gap": 5
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
     },
     {
-      "id": "logical-flow-order-data-text",
+      "id": "flow-order-information-text",
       "type": "text",
-      "x": 535,
-      "y": 207.5,
-      "width": 70,
+      "x": 410,
+      "y": 329,
+      "width": 170,
       "height": 25,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -1203,31 +992,31 @@
       "frameId": null,
       "index": "aQ",
       "roundness": null,
-      "seed": 2100000007,
+      "seed": 3000000027,
       "version": 1,
-      "versionNonce": 3100000007,
+      "versionNonce": 4000000027,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "order data",
-      "fontSize": 16,
+      "text": "Order information",
+      "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "logical-flow-order-data",
-      "originalText": "order data",
+      "containerId": "flow-order-information",
+      "originalText": "Order information",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "logical-flow-store-text",
-      "type": "text",
-      "x": 674,
-      "y": 300,
-      "width": 72,
-      "height": 25,
+      "id": "flow-payment-details",
+      "type": "arrow",
+      "x": 705,
+      "y": 450,
+      "width": 0,
+      "height": 190,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1240,30 +1029,49 @@
       "frameId": null,
       "index": "aR",
       "roundness": null,
-      "seed": 2100000008,
+      "seed": 3000000028,
       "version": 1,
-      "versionNonce": 3100000008,
+      "versionNonce": 4000000028,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778309100000,
+      "boundElements": [
+        {
+          "id": "flow-payment-details-text",
+          "type": "text"
+        }
+      ],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "validated",
-      "fontSize": 16,
-      "fontFamily": 5,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "logical-flow-store",
-      "originalText": "validated",
-      "autoResize": true,
-      "lineHeight": 1.25
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          190
+        ]
+      ],
+      "startBinding": {
+        "elementId": "place-order",
+        "focus": 0,
+        "gap": 5
+      },
+      "endBinding": {
+        "elementId": "process-payment",
+        "focus": 0,
+        "gap": 5
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
     },
     {
-      "id": "logical-flow-store-read-text",
+      "id": "flow-payment-details-text",
       "type": "text",
-      "x": 615,
-      "y": 300,
-      "width": 88,
+      "x": 625,
+      "y": 535,
+      "width": 170,
       "height": 25,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -1277,31 +1085,31 @@
       "frameId": null,
       "index": "aS",
       "roundness": null,
-      "seed": 2100000009,
+      "seed": 3000000029,
       "version": 1,
-      "versionNonce": 3100000009,
+      "versionNonce": 4000000029,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "history",
-      "fontSize": 16,
+      "text": "Payment details",
+      "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "logical-flow-store-read",
-      "originalText": "history",
+      "containerId": "flow-payment-details",
+      "originalText": "Payment details",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "logical-flow-fulfillment-text",
-      "type": "text",
-      "x": 820,
-      "y": 207.5,
-      "width": 62,
-      "height": 25,
+      "id": "flow-payment-request",
+      "type": "arrow",
+      "x": 660,
+      "y": 840,
+      "width": 0,
+      "height": 75,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1314,31 +1122,50 @@
       "frameId": null,
       "index": "aT",
       "roundness": null,
-      "seed": 2100000010,
+      "seed": 3000000030,
       "version": 1,
-      "versionNonce": 3100000010,
+      "versionNonce": 4000000030,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778309100000,
+      "boundElements": [
+        {
+          "id": "flow-payment-request-text",
+          "type": "text"
+        }
+      ],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "request",
-      "fontSize": 16,
-      "fontFamily": 5,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "logical-flow-fulfillment",
-      "originalText": "request",
-      "autoResize": true,
-      "lineHeight": 1.25
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          75
+        ]
+      ],
+      "startBinding": {
+        "elementId": "process-payment",
+        "focus": 0,
+        "gap": 5
+      },
+      "endBinding": {
+        "elementId": "payment-gateway",
+        "focus": 0,
+        "gap": 5
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
     },
     {
-      "id": "physical-web-app-text",
+      "id": "flow-payment-request-text",
       "type": "text",
-      "x": 135,
-      "y": 637.5,
-      "width": 100,
-      "height": 25,
+      "x": 550,
+      "y": 862,
+      "width": 105,
+      "height": 50,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1351,31 +1178,31 @@
       "frameId": null,
       "index": "aU",
       "roundness": null,
-      "seed": 2100000011,
+      "seed": 3000000031,
       "version": 1,
-      "versionNonce": 3100000011,
+      "versionNonce": 4000000031,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "Web App",
-      "fontSize": 20,
+      "text": "Payment\nrequest",
+      "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "physical-web-app",
-      "originalText": "Web App",
+      "containerId": "flow-payment-request",
+      "originalText": "Payment\nrequest",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "physical-api-service-text",
-      "type": "text",
-      "x": 400,
-      "y": 627.5,
-      "width": 110,
-      "height": 45,
+      "id": "flow-payment-response",
+      "type": "arrow",
+      "x": 735,
+      "y": 915,
+      "width": 0,
+      "height": -75,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1388,31 +1215,50 @@
       "frameId": null,
       "index": "aV",
       "roundness": null,
-      "seed": 2100000012,
+      "seed": 3000000032,
       "version": 1,
-      "versionNonce": 3100000012,
+      "versionNonce": 4000000032,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778309100000,
+      "boundElements": [
+        {
+          "id": "flow-payment-response-text",
+          "type": "text"
+        }
+      ],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "API\nService",
-      "fontSize": 18,
-      "fontFamily": 5,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "physical-api-service",
-      "originalText": "API\nService",
-      "autoResize": true,
-      "lineHeight": 1.25
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -75
+        ]
+      ],
+      "startBinding": {
+        "elementId": "payment-gateway",
+        "focus": 0,
+        "gap": 5
+      },
+      "endBinding": {
+        "elementId": "process-payment",
+        "focus": 0,
+        "gap": 5
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
     },
     {
-      "id": "physical-database-text",
+      "id": "flow-payment-response-text",
       "type": "text",
-      "x": 700,
-      "y": 627.5,
+      "x": 748,
+      "y": 862,
       "width": 110,
-      "height": 45,
+      "height": 50,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1425,31 +1271,31 @@
       "frameId": null,
       "index": "aW",
       "roundness": null,
-      "seed": 2100000013,
+      "seed": 3000000033,
       "version": 1,
-      "versionNonce": 3100000013,
+      "versionNonce": 4000000033,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "Order DB",
-      "fontSize": 20,
+      "text": "Payment\nresponse",
+      "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "physical-database",
-      "originalText": "Order DB",
+      "containerId": "flow-payment-response",
+      "originalText": "Payment\nresponse",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "physical-analytics-text",
-      "type": "text",
-      "x": 711.2300415039062,
-      "y": 807.5,
-      "width": 87.5399169921875,
-      "height": 25,
+      "id": "flow-order-record",
+      "type": "arrow",
+      "x": 515,
+      "y": 975,
+      "width": -105,
+      "height": 0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1462,30 +1308,49 @@
       "frameId": null,
       "index": "aX",
       "roundness": null,
-      "seed": 2100000014,
-      "version": 144,
-      "versionNonce": 766248343,
+      "seed": 3000000034,
+      "version": 1,
+      "versionNonce": 4000000034,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778311395985,
+      "boundElements": [
+        {
+          "id": "flow-order-record-text",
+          "type": "text"
+        }
+      ],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "Analytics",
-      "fontSize": 20,
-      "fontFamily": 5,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "physical-analytics",
-      "originalText": "Analytics",
-      "autoResize": true,
-      "lineHeight": 1.25
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -105,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "payment-gateway",
+        "focus": 0,
+        "gap": 5
+      },
+      "endBinding": {
+        "elementId": "order-database",
+        "focus": 0,
+        "gap": 5
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
     },
     {
-      "id": "physical-flow-request-text",
+      "id": "flow-order-record-text",
       "type": "text",
-      "x": 282,
-      "y": 637.5,
-      "width": 66,
+      "x": 415,
+      "y": 952,
+      "width": 120,
       "height": 25,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -1499,31 +1364,31 @@
       "frameId": null,
       "index": "aY",
       "roundness": null,
-      "seed": 2100000015,
+      "seed": 3000000035,
       "version": 1,
-      "versionNonce": 3100000015,
+      "versionNonce": 4000000035,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "HTTPS",
-      "fontSize": 16,
+      "text": "Order record",
+      "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "physical-flow-request",
-      "originalText": "HTTPS",
+      "containerId": "flow-order-record",
+      "originalText": "Order record",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "physical-flow-write-text",
-      "type": "text",
-      "x": 575,
-      "y": 612.5,
-      "width": 60,
-      "height": 25,
+      "id": "flow-confirmation-data",
+      "type": "arrow",
+      "x": 255,
+      "y": 915,
+      "width": 0,
+      "height": -125,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1536,30 +1401,142 @@
       "frameId": null,
       "index": "aZ",
       "roundness": null,
-      "seed": 2100000016,
+      "seed": 3000000036,
       "version": 1,
-      "versionNonce": 3100000016,
+      "versionNonce": 4000000036,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778309100000,
+      "boundElements": [
+        {
+          "id": "flow-confirmation-data-text",
+          "type": "text"
+        }
+      ],
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "write",
-      "fontSize": 16,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -125
+        ]
+      ],
+      "startBinding": {
+        "elementId": "order-database",
+        "focus": 0,
+        "gap": 5
+      },
+      "endBinding": {
+        "elementId": "send-confirmation",
+        "focus": 0,
+        "gap": 5
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "flow-confirmation-data-text",
+      "type": "text",
+      "x": 190,
+      "y": 830,
+      "width": 130,
+      "height": 50,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aa",
+      "roundness": null,
+      "seed": 3000000037,
+      "version": 1,
+      "versionNonce": 4000000037,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1778315000000,
+      "link": null,
+      "locked": false,
+      "text": "Confirmation\ndata",
+      "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "physical-flow-write",
-      "originalText": "write",
+      "containerId": "flow-confirmation-data",
+      "originalText": "Confirmation\ndata",
       "autoResize": true,
       "lineHeight": 1.25
     },
     {
-      "id": "physical-flow-read-text",
+      "id": "flow-order-confirmation",
+      "type": "arrow",
+      "x": 225,
+      "y": 590,
+      "width": 0,
+      "height": -150,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ab",
+      "roundness": null,
+      "seed": 3000000038,
+      "version": 1,
+      "versionNonce": 4000000038,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "flow-order-confirmation-text",
+          "type": "text"
+        }
+      ],
+      "updated": 1778315000000,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -150
+        ]
+      ],
+      "startBinding": {
+        "elementId": "send-confirmation",
+        "focus": 0,
+        "gap": 5
+      },
+      "endBinding": {
+        "elementId": "customer-entity",
+        "focus": 0,
+        "gap": 5
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "flow-order-confirmation-text",
       "type": "text",
-      "x": 575,
-      "y": 662.5,
-      "width": 60,
+      "x": 135,
+      "y": 505,
+      "width": 190,
       "height": 25,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -1571,60 +1548,23 @@
       "opacity": 100,
       "groupIds": [],
       "frameId": null,
-      "index": "b0",
+      "index": "ac",
       "roundness": null,
-      "seed": 2100000017,
+      "seed": 3000000039,
       "version": 1,
-      "versionNonce": 3100000017,
+      "versionNonce": 4000000039,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1778309100000,
+      "updated": 1778315000000,
       "link": null,
       "locked": false,
-      "text": "record",
-      "fontSize": 16,
+      "text": "Order confirmation",
+      "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
-      "containerId": "physical-flow-read",
-      "originalText": "record",
-      "autoResize": true,
-      "lineHeight": 1.25
-    },
-    {
-      "id": "physical-flow-event-text",
-      "type": "text",
-      "x": 473.57601165771484,
-      "y": 810,
-      "width": 42.84797668457031,
-      "height": 20,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "index": "b1",
-      "roundness": null,
-      "seed": 2100000018,
-      "version": 4,
-      "versionNonce": 1462895449,
-      "isDeleted": false,
-      "boundElements": [],
-      "updated": 1778311395985,
-      "link": null,
-      "locked": false,
-      "text": "event",
-      "fontSize": 16,
-      "fontFamily": 5,
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "physical-flow-event",
-      "originalText": "event",
+      "containerId": "flow-order-confirmation",
+      "originalText": "Order confirmation",
       "autoResize": true,
       "lineHeight": 1.25
     }

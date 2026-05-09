@@ -18,6 +18,12 @@ def main():
                 continue
             if element.get("roundness") == {"type": 2}:
                 fail(f"{template.name}:{element['id']} uses curved arrow roundness")
+            points = element.get("points") or []
+            for start, end in zip(points, points[1:]):
+                dx = end[0] - start[0]
+                dy = end[1] - start[1]
+                if abs(dx) > 1e-6 and abs(dy) > 1e-6:
+                    fail(f"{template.name}:{element['id']} uses a diagonal segment instead of an elbow path")
 
     skill_text = (ROOT / "SKILL.md").read_text()
     required_skill_phrases = [
