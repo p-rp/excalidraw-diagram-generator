@@ -67,6 +67,9 @@ Analyze the user's description to determine:
 - List of sequential steps
 - Decision points (if any)
 - Start and end points
+- Process flowcharts should use a guided start-to-end layout: start terminator, ordered process boxes, and end terminator, connected top-to-bottom unless the request needs a different reading direction
+- Decision flowcharts should use diamond decision nodes with clearly labeled branches such as Yes/No or Pass/Fail
+- Keep flowcharts simple and readable; split very large flows into multiple diagrams rather than crowding many branches into one canvas
 
 **For Relationship Diagrams:**
 - Entities/nodes (name + optional description)
@@ -138,12 +141,18 @@ Create the `.excalidraw` file with appropriate elements:
 
 ### Text Binding
 
-When placing text on arrows or shapes, **always bind the text to its container** using `containerId` and `boundElements`. This ensures:
+All visible labels must be bound text elements. When placing text on arrows or shapes, **always bind the text to its container** using `containerId` and `boundElements`. This ensures:
 - Text moves with its container when dragged
 - Double-click editing works on both the container and its text
 - Text stays inside the shape instead of floating separately
 
 Text is always a **separate `text` element** bound to the container. The inline `text` property on shapes does **not** render — only a bound text element works.
+
+Text placement rules apply to all diagram types where labels are used:
+- Shape labels must be centered inside the shape bounds, not floating separately or overlapping the border
+- Arrow labels must be bound to the arrow container itself, not placed as nearby standalone text
+- Arrow labels should be positioned on the arrow path so they read as part of the connector
+- Never use standalone text for labels when a shape or arrow can own that label
 
 #### Shapes and Arrows (same pattern)
 
@@ -244,6 +253,7 @@ When an arrow connects two shapes (e.g., flow between boxes), **bind the arrow t
 - `focus`: -1 to 1 — position along the edge (0 = center, -1 = top/left, 1 = bottom/right)
 - `gap`: pixels from shape edge (typically 1-10)
 - Every arrow that connects to a shape must be in that shape's `boundElements`
+- Arrows connecting shapes must bind to both shapes with `startBinding` and `endBinding`; do not leave connected arrows as free-floating lines
 - Use `startBinding: null` / `endBinding: null` only when the arrow doesn't connect to a shape
 
 When using the `add-arrow.py` script, pass `--from-id` and `--to-id` to automatically compute and sync both bindings:
@@ -302,6 +312,16 @@ Structure the complete Excalidraw file:
 5. **Font**: Always use `fontFamily: 5` (Excalifont) for all text elements
 6. **Text Binding**: Bind all text labels to their containers — inline `text` property for shapes, `containerId` + `boundElements` for arrow labels
 7. **Arrow style**: Use straight arrows for simple flows, curved for complex relationships
+
+### Flowchart Style Defaults
+
+Use the `templates/flowchart-template.excalidraw` layout as the default visual language for flowcharts:
+
+- Process flows: blue start ellipse → green process rectangles → yellow end ellipse
+- Decision flows: blue start ellipse → yellow diamond decision → green positive branch and red negative branch → merged end ellipse when appropriate
+- Use vertical reading order for simple process flows and balanced branching for decisions
+- Use branch labels only when they clarify the path, and bind those labels to the arrow itself
+- Keep arrows attached edge-to-edge through `startBinding` and `endBinding`; every connected shape must also list the arrow in `boundElements`
 
 ### Complexity Management
 
