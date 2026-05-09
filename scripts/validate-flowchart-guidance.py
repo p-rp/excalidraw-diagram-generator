@@ -19,22 +19,22 @@ def main():
 
     ids = set(by_id)
     required_ids = {
-        "process-start",
-        "process-step-1",
-        "process-step-2",
-        "process-end",
-        "decision-start",
-        "decision-check",
-        "decision-yes-step",
-        "decision-no-step",
-        "decision-end",
+        "start-shopping",
+        "add-item-decision",
+        "view-cart",
+        "enter-details",
+        "process-payment",
+        "order-confirmed",
+        "order-completed",
+        "payment-error",
     }
     missing = required_ids - ids
     if missing:
         fail(f"flowchart template missing required process/decision nodes: {sorted(missing)}")
 
-    if by_id["decision-check"]["type"] != "diamond":
-        fail("decision-check must be a diamond")
+    for node_id in ["add-item-decision", "process-payment"]:
+        if by_id[node_id]["type"] != "diamond":
+            fail(f"{node_id} must be a diamond")
 
     for element in elements:
         if element["type"] not in {"rectangle", "ellipse", "diamond", "arrow"}:
