@@ -91,6 +91,7 @@ Analyze the user's description to determine:
 - Every process and data store should have at least one input and one output when applicable
 - Data should move through a process before entering or leaving a data store
 - Avoid crossing data-flow arrows; use left-to-right or top-left-to-bottom-right layouts with short labels
+- Use the image-style DFD layout for order/process examples: stacked external entity on the left, large circular process nodes, rectangular data stores/systems at the bottom, and separate vertical lanes for request/response flows
 
 **For Business Flow (Swimlane):**
 - Actors/roles (departments, systems, people) - displayed as header columns
@@ -334,11 +335,13 @@ Use the `templates/data-flow-diagram-template.excalidraw` layout as the default 
 
 - Logical DFDs should focus on business data movement: external entity → process → process/data store → external destination
 - Physical DFDs should focus on implementation data movement: UI/client → service/process → database/data store → downstream system
-- Use red rounded rectangles for external entities, blue ellipses for transformation processes, green rectangles for data stores, and purple rectangles for downstream systems when useful
+- Use a stacked pink rectangle for a primary external entity when it has clear start/source/end roles; use blue circular process nodes, yellow data-store rectangles, and green external-system rectangles
+- Add subtle offset shadow shapes behind major DFD nodes to match the Excalidraw reference style while keeping the main shape editable
 - Label every data-flow arrow with the data being moved, not an action verb when a data noun is clearer
 - Bind every data-flow arrow to both the source and target node with `startBinding` and `endBinding`
 - Bind every arrow label to the arrow itself and place it on the connector path
 - Avoid unbalanced DFD nodes: processes and data stores should usually have both an input and an output
+- Route DFD arrows as straight horizontal/vertical segments in separate lanes so they do not criss-cross; use parallel vertical lanes for request/response pairs like payment request and payment response
 
 ### Complexity Management
 
